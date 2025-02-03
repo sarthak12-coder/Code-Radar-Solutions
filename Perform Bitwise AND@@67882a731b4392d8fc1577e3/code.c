@@ -7,7 +7,7 @@ int main() {
 
     subtract=a or b;
 
-    printf("%d", subtract)
+    printf("%d", subtract);
 
 
     return 0;

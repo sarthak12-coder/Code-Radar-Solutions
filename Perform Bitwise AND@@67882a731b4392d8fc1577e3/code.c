@@ -5,7 +5,7 @@ int main() {
     int a, b, subtract;
     scanf("%d %d", &a, &b);
 
-    subtract=a or b;
+    subtract= a or b;
 
     printf("%d", subtract);
 

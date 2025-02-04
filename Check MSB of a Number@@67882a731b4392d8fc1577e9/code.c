@@ -3,11 +3,10 @@
 int main() {
 
     int a;
-    unsigned int msbMask = 1U << (sizeof(int) *CHAR_BIT-1);
 
     scanf("%d",%a);
 
-    if (a & &msbMusk){
+    if (a <0){
         printf("Set");
     }else{
         printf("Not Set");

@@ -3,11 +3,11 @@
 int main() {
 
     int a;
-    unsigned int msbMask = 1U << (sizeof(int) *Char_Bit-1);
+    unsigned int msbMask = 1U << (sizeof(int) *CHAR_BIT-1);
 
     scanf("%d",%a);
 
-    if (sum &msbMusk){
+    if (a & &msbMusk){
         printf("Set");
     }else{
         printf("Not Set");

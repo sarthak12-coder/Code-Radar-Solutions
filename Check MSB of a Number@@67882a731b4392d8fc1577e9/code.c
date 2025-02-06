@@ -1,16 +1,13 @@
 #include <stdio.h>
 
 int main() {
+    unsigned int num;
+    scanf("%u", &num);
 
-    int a;
-
-    scanf("%d",%a);
-
-    if (a < 0){
-        printf("Set\n");
+    if (num &(1 << 32)){
+        printf("Set");
     }else{
-        printf("Not Set\n");
+        printf("Not Set");
     }
-
     return 0;
 }

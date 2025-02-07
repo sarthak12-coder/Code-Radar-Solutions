@@ -2,9 +2,9 @@
 
 int main() {
     int num;
-    scanf(" %d", &a);
+    scanf(" %d", &num);
 
-    if(isalpha(a)){
+    if(num>="a" && num<="z"){
         printf("Lowercase");
     }else if (num>="A" && num<="Z"){
         printf("Uppercase");

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int num;
+    char num;
     scanf(" %d", &num);
 
     if(num>="a" && num<="z"){

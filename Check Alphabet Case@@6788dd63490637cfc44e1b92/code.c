@@ -5,11 +5,11 @@ int main() {
     scanf("%d",&a);
 
     if(num>="a" && num<="z"){
-        printf("Lowercase");
+        printf("Lowercase\n");
     }else if (num>="A" && num<="Z"){
-        printf("Uppercase");
+        printf("Uppercase\n");
     }else{
-        printf("Not an alphabet";)
+        printf("Not an alphabet\n");
     }
     return 0;
 }

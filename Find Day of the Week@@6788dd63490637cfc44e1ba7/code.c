@@ -11,7 +11,7 @@ int main () {
     }else if(a==3){
         printf("Wednesday");
     }else if(a==4){
-        printf("Thursday");
+        printf("Thrusday");
     }else if (a==5){
         printf("Friday");
     }else if(a==6){

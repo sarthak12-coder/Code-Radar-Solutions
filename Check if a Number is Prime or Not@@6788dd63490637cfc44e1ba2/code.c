@@ -4,9 +4,10 @@ int main(){
     int n;
     scanf("%d",&n);
     int b=0;
-    for(int i=2, i<n-1,i++){
+    for(int i=2, i<=n-1,i++){
         if(n%i==0){
             b=1;
+            break;
         }
     }
 

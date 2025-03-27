@@ -1,18 +1,16 @@
-#include <stdio.h>
-int main()
-{
-    int n,i,j;
-    scanf("%d",&n);
-    for(int i =1; i<=n ; i++){
-        if(i==1 && i==n){
-            printf("*");
-        }else{
-            printf("*");
-            for (j=1; j<=n-2; j++){
+Loading Code...#include <stdio.h>
+int main(){
+    int a;
+    scanf("%d", &a);
+    for(int i=0; i<a; i++){
+        for(int j=0; j<a; j++){
+            if(i == 0 || i == a - 1 || j == 0 || j == a - 1){
+                printf("*");
+            }else{
                 printf(" ");
             }
-            printf("*");
         }
+        printf("\n");
     }
     return 0;
 }

@@ -4,22 +4,28 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    for (int i = 1; i <= n; i++) {  // Upper part (including middle row)
-        for (int j = n - i; j > 0; j--) {
-            printf(" ");
-        }
-        for (int j = 1; j <= (2 * i - 1); j++) {
-            printf("*");
-        }
-        printf("\n");
-    }
-
-    for (int i = n - 1; i >= 1; i--) {  // Lower part
-        for (int j = n - i; j > 0; j--) {
-            printf(" ");
-        }
-        for (int j = 1; j <= (2 * i - 1); j++) {
-            printf("*");
+    // Upper half
+    for (int i = 1; i <= 2 * n - 1; i++) {
+        if (i <= n) {
+            for (int j = n - i; j >= 1; j--) {
+                printf(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                printf("*");
+            }
+            for (int j = 1; j < i; j++) {
+                printf("*");
+            }
+        } else {
+            for (int j = 1; j <= i - n; j++) {  // Fixed space loop
+                printf(" ");
+            }
+            for (int j = 1; j <= (2 * n - i); j++) {  // Fixed star loop
+                printf("*");
+            }
+            for (int j = 1; j < (2 * n - i); j++) {  // Fixed second star loop
+                printf("*");
+            }
         }
         printf("\n");
     }

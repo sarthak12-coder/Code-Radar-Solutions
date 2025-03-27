@@ -20,10 +20,10 @@ int main() {
             for (int j = 1; j <= i - n; j++) {  // Fixed space loop
                 printf(" ");
             }
-            for(int j=1 , j<=2*n-1; j++){
+            for(int j=1 ; j<=2*n-1; j++){
                 printf("*");
             }
-            for (int j=1 , j< (2*n-1) , j++){
+            for (int j=1 ; j< (2*n-1) ; j++){
                 printf("*");
             }
         }

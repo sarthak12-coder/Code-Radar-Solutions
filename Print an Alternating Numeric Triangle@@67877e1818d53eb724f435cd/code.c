@@ -7,7 +7,7 @@ int main(){
             if((i==1 && j==1)||(i%2!=0 && j%2!=0)||(i%2==0 && j%2==0)){
                 printf("%d ", 1);
             }else{
-                printf("%d",0);
+                printf("%d ",0);
             }
         }
         printf("\n");

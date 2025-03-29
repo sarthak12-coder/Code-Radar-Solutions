@@ -18,6 +18,7 @@ int main(){
     for(int i=0;i<n;i++){
         Scanf("%d",arr[i]);
     }
+    bubbleSort(arr,n);
     printf("%d",arr[])
     return 0;
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
-int maxNumber(int arr[], int n ){
-    max = arr[0];
+int maxNumber(int arr[], int n){
+    int max = arr[0];
     for(int i=1;i<n;i++){
         if (arr[i]>max){
             max=arr[i];
@@ -12,7 +12,7 @@ int minNumber(int arr[], int n){
     int min = arr[0];
     for(int i=1;i<n;i++){
         if (arr[i]<min){
-        min=arr[i];
+            min=arr[i];
         }
     }
     return min;

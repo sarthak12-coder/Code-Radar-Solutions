@@ -1,5 +1,5 @@
 #include <stdio.h>
-int evenNum(arr[],n){
+int evenNum(int arr[],int n){
     int even =0;
     for(int i=0; i<n;i++){
         if(arr[i]%2==0){
@@ -8,7 +8,7 @@ int evenNum(arr[],n){
     }
     return even;
 }
-int oddNum(arr[],n){
+int oddNum(int arr[], int n){
     int odd =0;
     for(int i=0; i<n;i++){
         if(arr[i]%2!=0){

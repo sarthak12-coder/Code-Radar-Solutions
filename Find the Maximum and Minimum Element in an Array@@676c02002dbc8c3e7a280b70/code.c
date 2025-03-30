@@ -24,6 +24,6 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i]);
     }
-    printf("%d %d",maxNumber(arr,n),minNumber(arr,n));
+    printf("%d %d",minNumber(arr,n),maxNumber(arr,n));
     return 0;
 }

@@ -5,8 +5,8 @@ void sorted(int n,int arr[]){
             printf("Not Sorted");
             return ;
         }
-        printf("Sorted\n")
     }
+    printf("Sorted");
 }
 int main(){
     int n;

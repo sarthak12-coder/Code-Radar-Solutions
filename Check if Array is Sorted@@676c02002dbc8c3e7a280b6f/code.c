@@ -1,11 +1,11 @@
 #include <stdio.h>
 void sorted(int n,int arr[]){
     for(int i=0;i<n;i++){
-        if(arr[i]<arr[i+1]){
-            printf("Sorted");
-        }else{
-            printf("Not sorted")
+        if(arr[i]>arr[i+1]){
+            printf("Not Sorted");
+            return ;
         }
+        printf("Sorted\n")
     }
 }
 int main(){

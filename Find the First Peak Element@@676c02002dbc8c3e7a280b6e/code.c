@@ -5,10 +5,10 @@ void firstPeak(int arr[],int n){
         if(arr[i]>arr[i-1] && arr[i]<arr[i+1]);
         return arr[i];
     }
-    if(arr[n-1]>arr[n-1]){
+    if(arr[n-1]>arr[n-2]){
         return arr[n-1];
     }
-    retrun -1;
+    return -1;
 }
 
 int main(){

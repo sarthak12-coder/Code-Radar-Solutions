@@ -22,7 +22,7 @@ int main()[
     scanf("%d",&n);
     int arr[n];
     for(int i=0; i<n; i++){
-        scaanf("%d",arr[i]);
+        scaanf("%d",&arr[i]);
     }
     printf("%d %d",maxNumber(arr,n),minNumber(arr,n));
     return 0;

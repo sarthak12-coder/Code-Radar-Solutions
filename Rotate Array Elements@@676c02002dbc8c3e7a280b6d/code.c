@@ -3,7 +3,7 @@
 void rotateArray(int arr[], int n, int k) {
     int rotated[n]; // Create new array for rotated elements
 
-    k = k % n; // Handle cases where k > n
+    
 
     // Move last k elements to the beginning
     for (int i = 0; i < k; i++) {

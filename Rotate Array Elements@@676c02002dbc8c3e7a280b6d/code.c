@@ -12,7 +12,9 @@ void rotated(int arr[], int n, int k){
     }
 }
 int main(){
-    int n ,arr[n],k;
+    int n ;
+    int arr[n];
+    int k;
     scanf("%d",&n);
     for(int i=1;i<n;i++){
         scanf("%d",&arr[i]);

@@ -5,7 +5,7 @@ void rotated(int arr[], int n, int k){
         rotate[i]=arr[n-k+i];
     }
     for(int i=0;i<n-k;i++){
-        rotated[k+i]=arr[i];
+        rotate[k+i]=arr[i];
     }
     for(int i=0;i<n;i++){
         printf("%d",rotate[i]);

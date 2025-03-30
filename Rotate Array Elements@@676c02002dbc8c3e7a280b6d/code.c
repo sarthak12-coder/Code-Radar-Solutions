@@ -1,14 +1,14 @@
 #include <stdio.h>
 rotated(int arr[n], int n, int k){
-    int rotated[n]
+    int rotate[n]
     for(int i=0;i<k;i++){
-        rotated[i]=arr[n-k+i];
+        rotate[i]=arr[n-k+i];
     }
     for(int i=0;i<n-k;i++){
         rotated[k+i]=arr[i];
     }
     for(int i=0;i<n;i++){
-        printf("%d",rotated[0]);
+        printf("%d",rotate[0]);
     }
 }
 int main(){

@@ -17,7 +17,6 @@ int main(){
     for(int i=1;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    scanf("%d",k);
     scanf("%d",&k);
     rotated(arr,n,k);
     return 0;

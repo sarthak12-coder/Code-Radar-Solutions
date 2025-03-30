@@ -1,5 +1,5 @@
 #include <stdio.h>
-int max(int arr[], int n , int max){
+int maxNumber(int arr[], int n , int max){
     max = arr[0];
     for(int i=1;i<n;i++){
         if (arr[i]>max){
@@ -8,7 +8,7 @@ int max(int arr[], int n , int max){
     }
     return max;
 }
-int min(int arr[], int n , int min){
+int minNumber(int arr[], int n , int min){
     int min = arr[0];
     for(int i=1;i<n;i++){
         if (arr[i]<min){
@@ -24,7 +24,7 @@ int main()[
     for(int i=0; i<n; i++){
         scaanf("%d",arr[i]);
     }
-    printf("%d ",max(arr,n));
-    printf("%d",min(arr,n));
+    printf("%d ",maxNumber(arr,n));
+    printf("%d",minNumber(arr,n));
     return 0;
 ]

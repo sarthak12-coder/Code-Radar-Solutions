@@ -17,7 +17,7 @@ int minNumber(int arr[], int n){
     }
     return min;
 }
-int main()[
+int main(){
     int n;
     scanf("%d",&n);
     int arr[n];
@@ -26,4 +26,4 @@ int main()[
     }
     printf("%d %d",maxNumber(arr,n),minNumber(arr,n));
     return 0;
-]
+}

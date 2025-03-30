@@ -1,5 +1,5 @@
 #include <stdio.h>
-rotated(int arr[n], int n, int k){
+rotated(int arr[], int n, int k){
     int rotate[n]
     for(int i=0;i<k;i++){
         rotate[i]=arr[n-k+i];

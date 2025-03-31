@@ -24,6 +24,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    printf("%d %d",oddNumber(arr,n),evenNumber(arr,n));
+    printf("%d %d",evenNumber(arr,n),oddNumber(arr,n));
     return 0;
 }

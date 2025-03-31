@@ -1,23 +1,18 @@
 #include <stdio.h>
-
-void rotated(int arr[], int n, int k) {
-    int rotate[n]; 
-    for (int i = 0; i < k; i++) {
-        rotate[i] = arr[n - k + i];
+void rotated(int arr,int n, int k){
+    int rotate[n];
+    for(int i=0 ; i<k ;i++){
+        rotate[i]=arr[(n-k)+i];
     }
-
-    
-    for (int i = 0; i < n - k; i++) {
-        rotate[k + i] = arr[i];
+    for(int i=k; i<n;i++){
+        rotate[i]=arr[i-k];
     }
-
-    for (int i = 0; i < n; i++) {
-        printf("%d ", rotate[i]);
-        printf("\n");
+    for(int i=0; i<n;i++){
+        printf("%d",rotate[i]);
     }
     
+    retrun ;
 }
-
 int main() {
     int n, k;
     

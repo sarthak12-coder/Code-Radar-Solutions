@@ -6,7 +6,7 @@ void countFrequencies(int arr[], int n) {
         visited[i]=0;
     }
     for (int i = 0; i < n; i++) {
-        if (visited[i] == 1) {
+        if (visited[i] == 0) {
             continue;  
         }
 

@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int fibonacciSeries(int n){
+    if (n==1) return 0;
+    if(n==2) return 1;
     int a=0;
     int b=1;
     int sum =0;

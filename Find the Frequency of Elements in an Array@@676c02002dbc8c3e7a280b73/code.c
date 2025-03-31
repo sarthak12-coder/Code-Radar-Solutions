@@ -1,7 +1,7 @@
 #include <stdio.h>
 void countFrequencies(int arr[], int n){
     int count =0;
-    for(int i=1 ; i<n;i++){
+    for(int i=0 ; i<n;i++){
         int k=count;
         for (int j=1; j<n;j++){
             if(arr[i]==arr[j]){

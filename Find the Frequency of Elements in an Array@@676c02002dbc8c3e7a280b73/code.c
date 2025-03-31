@@ -1,14 +1,21 @@
 #include <stdio.h>
 void countFrequencies(int arr[], int n){
-    for(int i=0 ; i<n;i++){
-        int k=1;
-        for (int j=1; j<n;j++){
+    int visited[n];
+    for(int i=0;i<n;i++){
+        visited[i]=0;
+    }
+    for(int i=0 ; i<n ;i++){
+        if(visited[i]==1){
+            continue;
+        }
+        int count =1;
+        for(inty j=i-1;j<n;j++){
             if(arr[i]==arr[j]){
-                k=k+1;
+                count ++;
+                visited[j]=1;
             }
         }
-        printf("%d %d",arr[i],k);
-        printf("\n");
+        printf("%d %d",arr[i],count);
     }
     return ;
 }

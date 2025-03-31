@@ -9,7 +9,7 @@ void rotated(int arr[],int n, int k){
     }
     for(int i=0; i<n;i++){
         printf("%d",rotate[i]);
-        ptintf("\n");
+        printf("\n");
     }
     
     return;

@@ -9,7 +9,7 @@ int fibonacciSeries(n){
         a=b;
         b=sum;
     }
-    printf("%d",sum);
+    return sum;
     return ;
 }
 int main(){
@@ -19,6 +19,6 @@ int main(){
         printf("Invalid input\n");
         return 0;
     }
-    fibonacciSeries(n);
+    printf("%d",fibonacciSeries(n));
     return 0;
 }

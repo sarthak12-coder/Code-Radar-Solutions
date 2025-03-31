@@ -1,6 +1,6 @@
 #include <stdio.h>
 int oddNumber(int arr[], int n){
-    odd =0;
+    int odd =0;
     for(int i=0; i<n; i++){
         if(arr[i]%2!=0){
             odd=odd+1;
@@ -9,7 +9,7 @@ int oddNumber(int arr[], int n){
     return odd;
 }
 int evenNumber(int arr[], int n){
-    even =0;
+    int even =0;
     for(int i=0; i<n; i++){
         if(arr[i]%2==0){
             even=even+1;

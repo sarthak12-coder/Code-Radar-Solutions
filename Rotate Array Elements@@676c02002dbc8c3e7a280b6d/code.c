@@ -1,5 +1,5 @@
 #include <stdio.h>
-void rotated(int arr,int n, int k){
+void rotated(int arr[],int n, int k){
     int rotate[n];
     for(int i=0 ; i<k ;i++){
         rotate[i]=arr[(n-k)+i];
@@ -9,9 +9,10 @@ void rotated(int arr,int n, int k){
     }
     for(int i=0; i<n;i++){
         printf("%d",rotate[i]);
+        ptintf("\n");
     }
     
-    retrun ;
+    retrun;
 }
 int main() {
     int n, k;

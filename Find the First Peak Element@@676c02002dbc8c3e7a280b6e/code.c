@@ -6,7 +6,7 @@ int peakElement(int n, int arr[]){
         if(arr[i]>arr[i-1]&& arr[i]>arr[i+1]) return arr[i];
     }
     if (arr[n-1]>arr[n-2]) return arr[n-1];
-    return;
+    return -1;
 }
 int main(){
     int n;

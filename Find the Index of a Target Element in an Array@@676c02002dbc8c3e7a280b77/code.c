@@ -18,6 +18,6 @@ int main(){
     int k;
     scanf("%d",&k);
 
-    printf("%d",index());
+    printf("%d",index(n));
     return 0;
 }

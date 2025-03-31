@@ -1,6 +1,6 @@
 #include <stdio.h>
 void countFrequencies(int arr[], int n){
-    bol visited[n];
+    bool visited[n];
     for(int i=0;i<n;i++){
         visited[i]=0;
     }

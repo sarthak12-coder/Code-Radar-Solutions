@@ -1,5 +1,5 @@
 #include <stdio.h>
-int index(int arr[] , int n , int k){
+int index1(int arr[] , int n , int k){
     for(int i=0; i<n;i++){
         if(arr[i]==k) return i;
     }
@@ -15,6 +15,6 @@ int main(){
     int k;
     scanf("%d",&k);
 
-    printf("%d",index(arr,n,k));
+    printf("%d",index1(arr,n,k));
     return 0;
 }

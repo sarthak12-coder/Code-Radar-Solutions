@@ -1,6 +1,6 @@
 #include <stdio.h>
 void countFrequencies(int arr[n], int n){
-    count =0;
+    int count =0;
     for(int i=1 ; i<n;i++){
         int k=count;
         for (int j=1; j<n;j++){

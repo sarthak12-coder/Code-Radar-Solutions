@@ -12,7 +12,7 @@ void rotated(int arr[],int n, int k){
         ptintf("\n");
     }
     
-    retrun;
+    return;
 }
 int main() {
     int n, k;

@@ -20,10 +20,6 @@ int main(){
     }
     int k;
     scanf("%d",&k);
-    if(n==1){
-        printf("%d",arr[0]);
-        return ;
-    }
     rotated(arr,n,k);
     return 0;
 }

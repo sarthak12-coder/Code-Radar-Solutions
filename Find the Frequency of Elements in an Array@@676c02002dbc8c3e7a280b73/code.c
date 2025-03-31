@@ -4,7 +4,7 @@ void countFrequencies(int arr[], int n){
     for(int i=1 ; i<n;i++){
         int k=count;
         for (int j=1; j<n;j++){
-            if(arr[i]=arr[j]){
+            if(arr[i]==arr[j]){
                 k=k+1;
             }
             printf("%d %d",arr[i],count);

@@ -1,9 +1,7 @@
 #include <stdio.h>
 void rotated(int arr[],int n, int k){
     int rotate[n];
-    if(k<n){
-        k=k%n;
-    }
+    k=k%n;
     
     for(int i=0;i<k;i++){
         rotate[i]=arr[n-k+i];

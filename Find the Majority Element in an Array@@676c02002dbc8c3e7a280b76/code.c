@@ -1,7 +1,7 @@
 #include <stdio.h>
 int majority(int arr[],int n){
     for(int i=0;i<n;i++){
-        int count =1
+        int count =1;
         for(int j=1;j<n;j++){
             if(arr[i]=arr[j]){
                 count +=1;

@@ -8,7 +8,7 @@ void rotated(int arr[],int n, int k){
         rotate[i]=arr[i-k];
     }
     for(int i=0; i<n;i++){
-        primtf("%d ",rotate[i]);
+        printf("%d ",rotate[i]);
     }
 }
 int main(){

@@ -1,17 +1,20 @@
 #include <stdio.h>
 
 int fibonacciSeries(int n){
-    if (n==1) return 0;
-    if (n==2) return 1;
-    int a=0;
-    int b=1;
-    int sum =0;
-    for (int i=3; i<=n; i++){
-        sum =a+b;
+    int a=0,b=1,sum;
+    if(n>=1){
+        printf("%d ",a);
+    }
+    if(n>=2){
+        printf("%d "/b);
+    }
+    for(int i=1;i<=n;i++){
+        sum=a+b;
+        printf("%d",sum);
         a=b;
         b=sum;
     }
-    return sum;
+    return ;
 }
 int main(){
     int n;
@@ -20,6 +23,6 @@ int main(){
         printf("Invalid input\n");
         return 0;
     }
-    printf("%d",fibonacciSeries(n));
+    fibonacciSeries(n);
     return 0;
 }

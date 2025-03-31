@@ -9,6 +9,7 @@ void countFrequencies(int arr[], int n){
             }
             printf("%d %d",arr[i],count);
         }
+        printf("\n");
     }
     return ;
 }

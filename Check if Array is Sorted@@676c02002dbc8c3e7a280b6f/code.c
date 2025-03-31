@@ -9,8 +9,9 @@ int main(){
     }
     if(arr[1]>arr[n]){
         printf("Not Sorted");
-    }else(
+    }else{
         printf("Sorted");
-    )
+    }
+
     return 0;
 }

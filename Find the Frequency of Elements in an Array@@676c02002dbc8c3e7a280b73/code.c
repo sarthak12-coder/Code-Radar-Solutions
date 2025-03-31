@@ -1,31 +1,36 @@
 #include <stdio.h>
-void countFrequencies(int arr[], int n){
-    int visited[n];
-    for(int i=0;i<n;i++){
-        visited[i]=0;
-    }
-    for(int i=0 ; i<n ;i++){
-        if(visited[i]==1){
-            continue;
+
+void countFrequencies(int arr[], int n) {
+    int visited[n] = {0};  // Initialize visited array to 0
+
+    for (int i = 0; i < n; i++) {
+        if (visited[i] == 1) {
+            continue;  // Skip already counted elements
         }
-        int count =1;
-        for(int j=i+1;j<n;j++){
-            if(arr[i]==arr[j]){
-                count ++;
-                visited[j]=1;
+
+        int count = 1;  // Start counting current element
+
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] == arr[j]) {
+                count++;
+                visited[j] = 1;  // Mark duplicate as counted
             }
         }
-        printf("%d %d\n",arr[i],count);
+
+        printf("%d %d\n", arr[i], count);
     }
-    return ;
 }
-int main(){
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",arr[i]);
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    countFrequencies(arr,n);
+
+    countFrequencies(arr, n);
+
     return 0;
 }

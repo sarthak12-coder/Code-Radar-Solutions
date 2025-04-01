@@ -1,29 +1,34 @@
 #include <stdio.h>
-int main(){
+
+int main() {
     int n;
-    scanf("%d",&n);
-    for(int i=1;i<=2*n-1;i++){
-        if(i<=n){
-            for(int j=n-1;j>=1;j--){
+    scanf("%d", &n);
+
+    // Upper half
+    for (int i = 1; i <= 2 * n - 1; i++) {
+        if (i <= n) {
+            for (int j = n - i; j >= 1; j--) {
                 printf(" ");
             }
-            for(int j=1;j<=i;j++){
+            for (int j = 1; j <= i; j++) {
                 printf("*");
             }
-            for(intj=1;j<i;j++){
+            for (int j = 1; j < i; j++) {
                 printf("*");
             }
-            printf("\n");
-        }else{
-            for(int j=1;j<=i-n;j++){
+        } else {
+            for (int j = 1; j <= i - n; j++) {  // Fixed space loop
                 printf(" ");
             }
-            for(int j=1;j<=2*n-1;j++){
+            for(int j=1 ; j<=2*n-i; j++){
                 printf("*");
             }
-            for(int j=1;j<2*n-1;j++){
+            for (int j=1 ; j< (2*n-i) ; j++){
                 printf("*");
             }
         }
+        printf("\n");
     }
+
+    return 0;
 }

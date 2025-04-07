@@ -4,8 +4,8 @@ void Sequence(int *arr, int n){
     int longest = 1;
     int currentStreak = 1;
     for(int i=1 ; i<n;i++){
-        if(num[i]==num[i-1]) continue;
-        if(num[i]==num[i-i]+1){
+        if(arr[i]==arr[i-1]) continue;
+        if(arr[i]==arr[i-i]+1){
             currentStreak+=1;
         }else{
             if(currentStreak>longest){

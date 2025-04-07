@@ -17,7 +17,7 @@ void Sequence(int *arr, int n){
     if(currentStreak>longest){
         longest=currentStreak;
     }
-    printf("%d";longest);
+    printf("%d",longest);
 }
 int main(){
     int n;

@@ -1,6 +1,5 @@
 #include <stdio.h>
 void Sequence(int *arr, int n){
-    if(n == 0) return 0;
     int longest = 1;
     int currentStreak = 1;
     for(int i=1 ; i<n;i++){

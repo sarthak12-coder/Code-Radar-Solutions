@@ -2,6 +2,7 @@
 void Sequence(int *arr, int n){
     int longest = 1;
     int currentStreak = 1;
+    if(n==0) longest ==0;
     for(int i=1 ; i<n;i++){
         if(arr[i]==arr[i-1]) continue;
         if(arr[i]==arr[i-i]+1){

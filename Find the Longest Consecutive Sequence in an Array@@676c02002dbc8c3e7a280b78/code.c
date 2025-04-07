@@ -1,48 +1,31 @@
 #include <stdio.h>
-
-int compare(const void* a, const void* b) {
-    return (*(int*)a - *(int*)b);
-}
-
-int longestConsecutive(int* nums, int numsSize) {
-    if (numsSize == 0) return 0;
-
-    qsort(nums, numsSize, sizeof(int), compare);
-
+void Sequence(int *arr, int n){
+    if(n == 0) return 0;
     int longest = 1;
     int currentStreak = 1;
-
-    for (int i = 1; i < numsSize; i++) {
-        if (nums[i] == nums[i - 1]) continue;
-
-        if (nums[i] == nums[i - 1] + 1) {
-            currentStreak++;
-        } else {
-            if (currentStreak > longest) {
-                longest = currentStreak;
+    for(int i=1 ; i<n;i++){
+        if(num[i]==num[i-1]) continue;
+        if(num[i]==num[i-i]+1){
+            currentStreak+=1;
+        }else{
+            if(currentStreak>longest){
+                longest=currentStreak;
             }
-            currentStreak = 1;
+            currentStreak=1;
         }
     }
-
-    if (currentStreak > longest) {
-        longest = currentStreak;
+    if(currentStreak>longest){
+        longest=currentStreak;
     }
-
-    return longest;
+    printf("%d";longest);
 }
-
-int main() {
+int main(){
     int n;
-    scanf("%d", &n);
+    scanf("%d",&n);
     int arr[n];
-
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    for (int i=0; i<n;i++){
+        scanf("%d",&arr[i]);
     }
-
-    int result = longestConsecutive(arr, n);
-    printf("%d\n", result);
-
-    return 0;
+    Sequence(arr,n);
+    return 0;  
 }
